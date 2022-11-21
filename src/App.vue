@@ -11,7 +11,8 @@ import { defineComponent } from "vue";
 import NavBar from "./components/NavBar.vue"
 
 export default defineComponent({
-  components: { NavBar }
+  components: { NavBar },
+
 })
 
 </script>
@@ -21,7 +22,7 @@ export default defineComponent({
 .slide-right {
   &-enter-active,
   &-leave-active {
-    transition: all 2s ease-out;
+    transition: all 0.5s ease-out;
   }
   &-enter-from {
     opacity: 0;

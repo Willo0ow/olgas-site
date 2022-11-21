@@ -10,9 +10,9 @@
             </div>
         </div>
         <div class="nav__links">
-            <router-link :to="{name: 'Home'}" class="nav__link-item">Home</router-link>
-            <router-link :to="{name: 'About'}" class="nav__link-item">O mnie</router-link>
-            <router-link :to="{name: 'Contact'}" class="nav__link-item">Kontakt</router-link>
+            <router-link :to="{name: 'Home'}" class="nav__link-item" active-class="nav__link-item-active">Home</router-link>
+            <router-link :to="{name: 'About'}" class="nav__link-item" active-class="nav__link-item-active">O mnie</router-link>
+            <router-link :to="{name: 'Contact'}" class="nav__link-item" active-class="nav__link-item-active">Kontakt</router-link>
         </div>
     </nav>
 </template>
@@ -28,6 +28,7 @@ export default defineComponent({})
     &__container {
         display: flex;
         justify-content: space-between;
+        margin-bottom: 1rem;
     }
     &__logo {
         &-image{
@@ -50,6 +51,12 @@ export default defineComponent({})
         font-weight: 500;
         text-transform: uppercase;
         padding: 2rem;
+        text-decoration: none;
+        color: #b8aaa5;
+        &-active{
+            color: #c88b79;
+        }
+
     }
 }
 </style>
