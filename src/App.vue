@@ -1,12 +1,15 @@
 <template>
-  <NavBar />
-  <div class="content">
+  <div>
 
-    <router-view v-slot="{ Component }">
-      <Transition name="slide-right">
-        <component :is="Component" />
-      </Transition>
-    </router-view>
+    <NavBar />
+    <div class="page">
+  
+      <router-view v-slot="{ Component }">
+        <Transition name="slide-right">
+          <component :is="Component" />
+        </Transition>
+      </router-view>
+    </div>
   </div>
 </template>
 <script lang="ts">
@@ -22,9 +25,10 @@ export default defineComponent({
 
 
 <style lang="scss">
-.content {
+.page {
   padding-left: 4rem;
   padding-right: 4rem;
+  padding-top: 120px;
 }
 .slide-right {
   &-enter-active,

@@ -26,9 +26,12 @@ export default defineComponent({})
 <style scoped lang="scss">
 .nav {
     &__container {
+        background-color: #feffff;
+        position: fixed;
+        width: 100%;
         display: flex;
         justify-content: space-between;
-        margin-bottom: 1rem;
+        padding-bottom: 1rem;
     }
     &__logo {
         &-image{
@@ -44,7 +47,7 @@ export default defineComponent({})
     }
     &__links {
         display: flex;
-        font-size: 1.6rem;
+        font-size: 1.5rem;
     }
 
     &__link-item {
