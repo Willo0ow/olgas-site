@@ -3,7 +3,6 @@
 
     <NavBar />
     <div class="page">
-  
       <router-view v-slot="{ Component }">
         <Transition name="slide-right">
           <component :is="Component" />
@@ -26,8 +25,8 @@ export default defineComponent({
 
 <style lang="scss">
 .page {
-  padding-left: 4rem;
-  padding-right: 4rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
   padding-top: 120px;
 }
 .slide-right {

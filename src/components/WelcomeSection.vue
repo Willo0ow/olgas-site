@@ -36,10 +36,18 @@ export default defineComponent({
     flex-direction: column;
     justify-content: space-around;
     &__title{
-        font-size: 5rem;
+        font-size: 2rem;
+        padding-left: 1rem;
+        @media screen and (min-width: 445px) {
+            font-size: 3rem;
+            padding-left: 2rem;
+        }
+        @media screen and (min-width: 790px) {
+            font-size: 5rem;
+            padding-left: 5rem;
+        }
         font-weight: 600;
         max-width: 35rem;
-        padding-left: 5rem;
     }
     &__icon{
         display: flex;

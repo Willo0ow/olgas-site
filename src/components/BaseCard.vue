@@ -30,7 +30,13 @@ export default defineComponent({
 </script>
 <style lang="scss">
 .card{
-    width: v-bind(width);
+    width: 100%;
+    @media screen and (min-width:545px) {
+        width: 200px;
+    }
+    @media screen and (min-width:810px) {
+        width: v-bind(width);
+    }
     border-radius: 0.2rem;
     box-shadow: 1px 1px 3px 1px rgb(0 0 0 / 16%), 0 3px 5px 5px rgb(0 0 0 / 7%);
     &__title{

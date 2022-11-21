@@ -4,10 +4,25 @@
 
 $base-font-color: #c88b79;
 
-
+@mixin breakpoint-desktop {
+    @media screen and (min-width: 880px) {
+      @content;
+    }
+  }
+  @mixin breakpoint-tablet {
+    @media screen and (min-width: 470px) {
+      @content;
+    }
+  }
+  @mixin breakpoint-mobile {
+    @media screen and (max-width: 469px) {
+      @content;
+    }
+  }
 
 body {
     font-family: 'Source Sans Pro', sans-serif;
     color: $base-font-color;
     margin: 0;
 }
+

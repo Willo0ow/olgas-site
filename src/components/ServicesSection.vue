@@ -84,5 +84,6 @@ export default defineComponent({
     &__card{
         margin: 1rem;
     }
+    
 }
 </style>

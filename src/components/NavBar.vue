@@ -2,7 +2,7 @@
     <nav class="nav__container">
         <div class="nav__logo">
             <div class="nav__logo-image">
-                <img src="../assets/images/olga_logo.png" height="100px" alt="logo" />
+                <img src="../assets/images/olga_logo.png" alt="logo" />
             </div>
             <div class="nav__logo-text">
                 <div class="nav__logo-text-title">Olga Kiraga</div>
@@ -36,9 +36,18 @@ export default defineComponent({})
     &__logo {
         &-image{
             display: inline-block;
+            & img{
+                height: 75px;
+                @media screen and (min-width: 540px) {
+                    height: 100px;
+                }
+            }
         }
         &-text {
-            display: inline-block;
+            display: none;
+            @media screen and (min-width: 900px) {
+                display: inline-block;
+            }
             &-title {
                 font-size: 2rem;
             }
@@ -47,13 +56,22 @@ export default defineComponent({})
     }
     &__links {
         display: flex;
-        font-size: 1.5rem;
+        font-size: 1rem;
+        @media screen and (min-width: 540px) {
+            font-size: 1.5rem;
+        }
     }
 
     &__link-item {
         font-weight: 500;
         text-transform: uppercase;
-        padding: 2rem;
+        padding: 1.5rem 0.6rem;
+        @media screen and (min-width: 520px) {
+            padding: 2rem 1rem;
+        }
+        @media screen and (min-width: 635px) {
+            padding: 2rem;
+        }
         text-decoration: none;
         color: #b8aaa5;
         &-active{
