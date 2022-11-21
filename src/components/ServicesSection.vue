@@ -13,61 +13,61 @@ export default defineComponent({
         const cards = [
             {
                 title: "Życie",
-                description: "blablabla",
+                description: "Zabezpieczenie dla rodziny, Utrzymanie standardów życia.",
                 img: "zycie.jpeg",
                 show: false
             },
             {
                 title: "Zdrowie",
-                description: "blablabla",
+                description: "Pieniądze pozwalające wrócić do zdrowia po operacji czy poważnej chorobie, oraz rekompensata przy niezdolność do pracy.",
                 img: "zdrowie.jpeg",
                 show: false
             },
             {
                 title: "Wypdaki",
-                description: "blablabla",
+                description: "Zwrot kosztów za leczenie i rehabilitacyjne oraz rekompensatą za utratę zdrowia.",
                 img: "wypadki.jpeg",
                 show: false
             },
             {
                 title: "Leczenie za granicą",
-                description: "blablabla",
+                description: "2 miliony Euro na leczenie poważnych chorób zagranicą.",
                 img: "leczenie_zagranica.jpeg",
                 show: false
             },
             {
                 title: "Emerytura",
-                description: "blablabla",
+                description: "Pieniądze na utrzymanie standardu życia w okresie jesieni życia.",
                 img: "emerytura.jpeg",
                 show: false
             },
             {
                 title: "Przyszłość dzieci",
-                description: "blablabla",
+                description: "Dobry start dla dzieci w dorosłe życie i studia.",
                 img: "przyszlosc_dzieci.jpeg",
                 show: false
             },
             {
                 title: "Firma",
-                description: "blablabla",
+                description: "Ubezpieczenie pracowników, OC zawodowe.",
                 img: "firma.png",
                 show: false
             },
             {
                 title: "Sukcesja zawodowa",
-                description: "blablabla",
+                description: "Zabezpieczenie wspólników i firm rodzinnych.",
                 img: "sukcesja_zawodowa.jpeg",
                 show: false
             },
             {
                 title: "Dom",
-                description: "blablabla",
+                description: "Zabezpieczenie majątku od zdarzeń losowych, OC w życiu prywatnym.",
                 img: "dom.jpeg",
                 show: false
             },
             {
                 title: "Podróż",
-                description: "blablabla",
+                description: "Koszty leczenia zagranicą, ubezpieczenie bagażu/ sprzętu sportowego, OC w życiu prywatnym.",
                 img: "podroz.jpeg",
                 show: false
             },
