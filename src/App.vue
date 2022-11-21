@@ -1,10 +1,13 @@
 <template>
   <NavBar />
-  <router-view v-slot="{ Component }">
-    <Transition name="slide-right">
-      <component :is="Component" />
-    </Transition>
-  </router-view>
+  <div class="content">
+
+    <router-view v-slot="{ Component }">
+      <Transition name="slide-right">
+        <component :is="Component" />
+      </Transition>
+    </router-view>
+  </div>
 </template>
 <script lang="ts">
 import { defineComponent } from "vue";
@@ -19,10 +22,14 @@ export default defineComponent({
 
 
 <style lang="scss">
+.content {
+  padding-left: 4rem;
+  padding-right: 4rem;
+}
 .slide-right {
   &-enter-active,
   &-leave-active {
-    transition: all 0.5s ease-out;
+    transition: all 0.3s ease-out;
   }
   &-enter-from {
     opacity: 0;
