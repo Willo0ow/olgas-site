@@ -1,6 +1,6 @@
 <template>
     <div class="contact">
-        <p class="contact__info">kiraga.olga@aviva.com.pl</p>
+        <p class="contact__info">kiraga.olga@allianz.com.pl</p>
         <p class="contact__label">e-mail</p>
 
         <p class="contact__info">511 470 473</p>
