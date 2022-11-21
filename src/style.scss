@@ -1,0 +1,12 @@
+@import "normalize-scss/sass/normalize";
+
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600;700&display=swap');
+
+$base-font-color: #c88b79;
+
+
+
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+    color: $base-font-color;
+}
