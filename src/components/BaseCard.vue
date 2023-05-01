@@ -32,7 +32,7 @@ export default defineComponent({
 .card{
     width: 100%;
     @media screen and (min-width:545px) {
-        width: 200px;
+        min-width: 200px;
     }
     @media screen and (min-width:810px) {
         width: v-bind(width);

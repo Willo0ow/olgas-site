@@ -1,6 +1,6 @@
 <template>
     <div class="services">
-        <BaseCard class="services__card" v-for="(card, index) in cards" :key="index" width="300px" :title="card.title" :image="card.img" :content="card.description" />
+        <BaseCard class="services__card" v-for="(card, index) in cards" :key="index" :title="card.title" :image="card.img" :content="card.description" />
     </div>
 </template>
 <script lang="ts">
@@ -78,12 +78,22 @@ export default defineComponent({
 </script>
 <style lang="scss">
 .services {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    &__card{
-        margin: 1rem;
+    max-width: 1400px;
+    margin: 1rem auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    @media screen and (min-width: 550px) {
+        grid-template-columns: 1fr 1fr;
     }
-    
+    @media screen and (min-width: 800px) {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    @media screen and (min-width: 1100px) {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+    @media screen and (min-width: 1300px) {
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    }
 }
 </style>

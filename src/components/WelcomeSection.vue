@@ -1,6 +1,23 @@
 <template>
     <div class="welcome">
-        <h1 class="welcome__title">Przekonaj się do ubezpieczenia</h1>
+        <h1 class="welcome__title">Przekonaj się do ubezpieczeń</h1>
+        <img src="../assets/images/portret.jpg" alt="portret" class="welcome__photo" />
+        <div class="welcome__text">
+            <p>
+                Życie nauczyło mnie, jak bardzo istotna jest pomoc drugiego człowieka, szczególnie w sytuacjach
+                kryzysowych.
+                Dlatego też moja ścieżka zawodowa poprowadziła mnie w kierunku doradztwa ubezpieczeniowego.
+                Opierając się na zaufaniu pomagam moim klientom podejmować decyzje dotyczące zabezpieczenia przyszłości
+                swojej i najbliższych. Mam świadomość, że potrzeby każdego człowieka są zróżnicowane, ale łączy nas
+                jedno -
+                chcemy czuć się bezpiecznie.
+
+            </p>
+            <p>
+                Indywidualnie dopasowane rozwiązania mogą uratować finanse w sytuacjach losowych. Nie pozwól, aby ktoś
+                decydował za Ciebie, weź sprawy w swoje ręce, a ja wskażę Ci możliwości.
+            </p>
+        </div>
         <div class="welcome__icon">
             <img class="welcome__icon-img" src="../assets/images/chevron-down.png" alt="chevron-down" @click="scrollDown">
         </div>
@@ -30,37 +47,62 @@ export default defineComponent({
 </script>
 <style lang="scss">
 .welcome {
-    height: v-bind(viewPortHeight);
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    &__title{
-        font-size: 2rem;
-        padding-left: 1rem;
-        @media screen and (min-width: 445px) {
+    display: grid;
+    grid-template-areas: 'header' 'text' 'photo' 'icon';
+    grid-template-columns: 1fr;
+    @media screen and (min-width: 800px) {
+        grid-template-areas: 'header photo' 'text photo' 'icon photo';
+        grid-template-columns: 2fr 1fr;
+    }
+    margin: 3rem auto;
+    max-width: 1400px;
+    &__title {
+        margin-top: 0;
+        grid-area: header;
+        font-size: 2.3rem;
+        @media screen and (min-width: 460px) {
             font-size: 3rem;
-            padding-left: 2rem;
         }
-        @media screen and (min-width: 790px) {
-            font-size: 5rem;
-            padding-left: 5rem;
+        @media screen and (min-width: 800px) {
+            margin-right: 2rem;
         }
-        font-weight: 600;
-        max-width: 35rem;
+        @media screen and (min-width: 1100px) {
+            font-size: 4rem;
+            margin-right: 3rem;
+        }
     }
-    &__icon{
-        display: flex;
-        justify-content: center;
-
+    &__photo {
+        grid-area: photo;
+        width: 100%;
     }
-    &__icon-img{
-        display: block;
-        width: 100px;
-        height: 100px;
-        &:hover{
-            border: 1px #c88b79 solid;
-            border-radius: 100%;
+    &__text {
+        grid-area: text;
+        font-size: 1.3rem;
+        line-height: 130%;
+        text-align: justify;
+        font-style: italic;
+        margin-bottom: 2rem;
+        @media screen and (min-width: 800px) {
+            margin-right: 2rem;
+            margin-bottom: 0;
+            font-size: 1.5rem;
+        }
+        @media screen and (min-width: 1100px) {
+            margin-right: 3rem;
+        }
+    }
+    &__icon {
+        grid-area: icon;
+        text-align: center;
+        margin-top: 2rem;
+        @media screen and (min-width: 800px) {
+            margin-top: 0;
+        }
+        & img {
+            width: 3rem;
+            @media screen and (min-width: 1100px) {
+                width: 4rem;
+            }
         }
     }
 }
