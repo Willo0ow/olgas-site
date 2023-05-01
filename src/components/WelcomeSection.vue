@@ -18,9 +18,6 @@
                 decydował za Ciebie, weź sprawy w swoje ręce, a ja wskażę Ci możliwości.
             </p>
         </div>
-        <div class="welcome__icon">
-            <img class="welcome__icon-img" src="../assets/images/chevron-down.png" alt="chevron-down" @click="scrollDown">
-        </div>
     </div>
 </template>
 <script lang="ts">
@@ -46,13 +43,14 @@ export default defineComponent({
 <style lang="scss">
 .welcome {
     display: grid;
-    grid-template-areas: 'header' 'text' 'photo' 'icon';
+    grid-template-areas: 'header' 'text' 'photo';
     grid-template-columns: 1fr;
     @media screen and (min-width: 800px) {
-        grid-template-areas: 'header photo' 'text photo' 'icon icon';
+        grid-template-areas: 'header photo' 'text photo';
         grid-template-columns: 2fr 1fr;
     }
-    margin: 3rem auto;
+    border-radius: 100%;
+    margin: 3rem auto 0;
     max-width: 1400px;
     &__title {
         margin-top: 0;
@@ -87,20 +85,6 @@ export default defineComponent({
         }
         @media screen and (min-width: 1100px) {
             margin-right: 3rem;
-        }
-    }
-    &__icon {
-        grid-area: icon;
-        text-align: center;
-        margin-top: 2rem;
-        @media screen and (min-width: 800px) {
-            margin-top: 0;
-        }
-        & img {
-            width: 3rem;
-            @media screen and (min-width: 1100px) {
-                width: 4rem;
-            }
         }
     }
 }

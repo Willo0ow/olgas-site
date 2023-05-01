@@ -1,9 +1,8 @@
 <template>
     <WelcomeSection :servicesSectionElement="servicesSectionElement" />
+    <hr class="section-bar">
     <ServicesSection id="servicesSectionElement" />
-    <div class="welcome__icon">
-            <img class="welcome__icon-img" src="../assets/images/chevron-down.png" alt="chevron-down">
-        </div>
+    <hr class="section-bar">
     <h2 class="section-header">KONTAKT</h2>
     <div class="contact">
         <p class="contact__label">e-mail</p>
@@ -80,6 +79,14 @@ export default defineComponent({
         margin-top: 1.5rem;
     }
 
+}
+.section-bar {
+    height: 2px;
+    background-color: #cbc1be8f;
+    margin: 0 auto;
+    width: 50%;
+    border: none;
+    margin-top: 5rem;
 }
 
 </style>
