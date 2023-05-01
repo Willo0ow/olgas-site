@@ -1,6 +1,9 @@
 <template>
-    <div class="services">
-        <BaseCard class="services__card" v-for="(card, index) in cards" :key="index" :title="card.title" :image="card.img" :content="card.description" />
+    <div>
+        <h2 class="section-header">OFERTA</h2>
+        <div class="services">
+            <BaseCard class="services__card" v-for="(card, index) in cards" :key="index" :title="card.title" :image="card.img" :content="card.description" />
+        </div>
     </div>
 </template>
 <script lang="ts">
@@ -86,14 +89,19 @@ export default defineComponent({
     @media screen and (min-width: 550px) {
         grid-template-columns: 1fr 1fr;
     }
-    @media screen and (min-width: 800px) {
+    @media screen and (min-width: 830px) {
         grid-template-columns: 1fr 1fr 1fr;
     }
-    @media screen and (min-width: 1100px) {
+    @media screen and (min-width: 1150px) {
         grid-template-columns: 1fr 1fr 1fr 1fr;
     }
-    @media screen and (min-width: 1300px) {
+    @media screen and (min-width: 1400px) {
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     }
+}
+.section-header {
+    text-align: center;
+    font-size: 3rem;
+    margin-top: 5rem;
 }
 </style>

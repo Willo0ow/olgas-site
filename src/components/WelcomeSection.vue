@@ -21,8 +21,6 @@
         <div class="welcome__icon">
             <img class="welcome__icon-img" src="../assets/images/chevron-down.png" alt="chevron-down" @click="scrollDown">
         </div>
-
-
     </div>
 </template>
 <script lang="ts">
@@ -51,7 +49,7 @@ export default defineComponent({
     grid-template-areas: 'header' 'text' 'photo' 'icon';
     grid-template-columns: 1fr;
     @media screen and (min-width: 800px) {
-        grid-template-areas: 'header photo' 'text photo' 'icon photo';
+        grid-template-areas: 'header photo' 'text photo' 'icon icon';
         grid-template-columns: 2fr 1fr;
     }
     margin: 3rem auto;

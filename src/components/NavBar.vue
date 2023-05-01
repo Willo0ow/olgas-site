@@ -56,8 +56,11 @@ export default defineComponent({})
     }
     &__links {
         display: flex;
-        font-size: 1rem;
+        font-size: 0.9rem;
         @media screen and (min-width: 540px) {
+            font-size: 1.2rem;
+        }
+        @media screen and (min-width: 840px) {
             font-size: 1.5rem;
         }
     }

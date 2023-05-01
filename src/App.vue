@@ -3,11 +3,7 @@
 
     <NavBar />
     <div class="page">
-      <router-view v-slot="{ Component }">
-        <Transition name="slide-right">
-          <component :is="Component" />
-        </Transition>
-      </router-view>
+      <router-view />
     </div>
   </div>
 </template>

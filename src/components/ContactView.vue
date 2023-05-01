@@ -13,7 +13,6 @@
         <p class="contact__label">Biuro</p>
 
         <p class="contact__annotation">Spotkania odbywają się w biurze, u klienta, na mieście lub zdalnie.</p>
-
     </div>
 </template>
 <script lang="ts">
