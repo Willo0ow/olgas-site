@@ -1,6 +1,5 @@
 <template>
   <div>
-
     <NavBar />
     <div class="page">
       <router-view />
@@ -9,15 +8,12 @@
 </template>
 <script lang="ts">
 import { defineComponent } from "vue";
-import NavBar from "./components/NavBar.vue"
+import NavBar from "./components/NavBar.vue";
 
 export default defineComponent({
   components: { NavBar },
-
-})
-
+});
 </script>
-
 
 <style lang="scss">
 .page {
@@ -39,5 +35,4 @@ export default defineComponent({
     transform: translateX(100%);
   }
 }
-
 </style>
